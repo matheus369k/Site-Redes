@@ -19,17 +19,18 @@ main{
 }
 
 ul{
+    padding: 10px;
     text-align: right;
     list-style: none; 
 }
 
 a > img{
     box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.416);
-    margin: 15px 5px;
+    margin: 15px 0px;
     border-radius: 100%;
 
-    width: 7vh;
-    height: 7vh;
+    width: 5vh;
+    height: 5vh;
 }
 
 a > img:hover{
