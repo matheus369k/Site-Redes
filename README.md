@@ -21,4 +21,4 @@ Para mostrar diferentes imagens na tela da imagem foi utilizado a tag ```<iframe
 
  ## 📃Licença
 
- Licença aderida (MIT) - veja [Licença](/license)
+ Licença aderida (MIT) - veja [Licença](LICENSE)
