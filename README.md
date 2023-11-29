@@ -1,24 +1,19 @@
-# Site Redes
+# 💻Site Redes
 <div align="center">
+ 
+![site-redes](https://github.com/matheus369k/Site-Redes/assets/47065962/6a9899eb-3820-40b8-a7ae-2e7bdb1cccdc)</div>
 
-![2023-08-17-150650_1024x600_scrot](https://github.com/matheus369k/Site-Redes/assets/47065962/7e4c9e80-0978-483e-bc2c-6c405ed60fdb)</div>
-__*Nota*__ : *Projeto desenvolvido  durante o Curso de html e css no [CursoemVideo](https://www.youtube.com/@CursoemVideo).*
-## 🚀Começando
-
-### 📋Linguagens utilizadas
+## 🧰Ferramentas
 
 - HTML5
 - CSS
 
-## 🧰Codigo 
+## ⚙️Desenvolvimento 
 
-### __*CSS*__
-Para mostrar diferentes imagens na tela da imagem foi utilizado a tag ```<iframe></iframe>```.
+O Projeto e uma pagina simples de html, tendo seu foco o desenvolvimento das habilidades de __animação__ em __CSS__ com o uso do __@keyframes__ e a implementação da __tag__ ```<iframe>...</iframe>``` para ganho de mais experiencia utilizando a mesma.
+<br>
+Fora utilizado __flexbox__ para organizar o conteudo e uma leve adaptação com o __MediaQuery__, para deixa-lo mais responsivo.
 
-<div align=" center">
- 
- ![Sem título](https://github.com/matheus369k/Site-Redes/assets/47065962/0d2cae1e-0b68-4dec-b4c4-f5335549649b)</div>
+## 📃Licença
 
- ## 📃Licença
-
- Licença aderida (MIT) - veja [Licença](LICENSE)
+( MIT ) - Veja [LICENSE](./LICENSE)
