@@ -1,20 +1,35 @@
-/* Reset */
+/* Style Animetion*/
 
-* {
-    margin: 0;
-    padding: 0;
 
-    box-sizing: border-box;
+@keyframes btn-hover {
+    0% {
+        transform: translateY(0px) scale(1);
 
-    list-style: none;
+        border: 2px solid gray;
+    }
+
+    100% {
+        transform: translateY(-2px) scale(1.1);
+
+        border: 2px double rgb(255, 255, 255);
+    }
 }
 
-/* Style*/
+@keyframes phone-jump {
+    0% {
+        transform: translateY(0);
+    }
 
-html, body {
-    background: white url(../img/fundo-madeira.jpg) center center no-repeat fixed;
-    background-size: cover;
+    100% {
+        transform: translateY(-20px);
+        box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.535);
+    }
+}
 
+/* Style main */
+
+html,
+body {
     min-height: 100vh;
     height: 100%;
     width: 100vw;
@@ -22,7 +37,14 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+    background: url(../img/fundo-madeira.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
 body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705), rgba(29, 29, 29, 0.705));
+
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -37,42 +59,70 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    transition: 1s ease-in-out;
 }
 
 .Navbar_container img {
-    width: 100%;
+    width: 60px;
     height: auto;
 
-    border-radius: 50%;
+    border-radius: 100%;
     border: 2px solid gray;
 
     box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.604);
 }
 
 .Navbar_container img:hover {
-    transform: scale(1.1);
-    transition: .7s;
-
-    border: 2px solid white;
+    animation: btn-hover 3s ease-in-out alternate infinite;
 }
 
 .Iframe_container {
     width: 340px;
-    height: 650px;
+    height: 640px;
 
     margin: 0 auto;
-    
-    background: url(../img/frame-iphone.png) center center no-repeat;
+
+    animation: phone-jump 2s ease-in-out alternate infinite;
+
+    background-image: radial-gradient(rgba(0, 0, 0, 0.318) 0%, rgba(193, 193, 193, 0.6) 20%, rgba(193, 193, 193, 0.857) 40%, rgba(193, 193, 193, 0.409) 60%, rgba(0, 0, 0, 0.283) 80%), url(../img/frame-iphone.png);
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
 
+    border-radius: 60px;
+    box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.535);
+
     position: relative;
+
+    transition: 1s ease-out;
 }
 
 .Iframe_container iframe {
     position: absolute;
-    top: 83px;
-    left: 24px;
+    top: 80px;
+    left: 23px;
 
-    width: 292px;
-    height: 489px;
+    background-color: black;
+
+    border: 1px solid rgb(255, 255, 255);
+
+    width: 295px;
+    height: 485px;
+}
+
+/* Style mediaQuerys */
+
+@media (max-width: 493px) {
+    .Navbar_container {
+        width: 60px;
+
+        margin-right: -15px;
+
+        z-index: 3;
+    }
+
+    .Navbar_container img {
+        width: 40px;
+    }
 }
